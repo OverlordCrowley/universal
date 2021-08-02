@@ -1,0 +1,128 @@
+@media ( max-width: 1200px)
+  .container
+    max-width: 960px
+  .navbar
+    &__logo
+      width: 130px
+    &__span
+      width: 90px
+      margin-left: 10px
+    &__button
+      padding-right: 30px
+      padding-left: 30px
+  .main
+    &-left
+      min-width: 691px
+@media ( max-width: 992px)
+  .container
+    max-width: 730px
+  .navbar
+    &__logo
+      width: 130px
+    &__image
+    &__span
+      width: 90px
+      margin-left: 10px
+    &-list
+      &__item
+        margin-left: 10px
+        &:first-child
+          margin-left: 0
+      &__link
+        font-size: 13px
+    &__button
+      padding-right: 15px
+      padding-left: 15px
+      font-size: 12px
+  .main
+    padding-top: 20px
+    padding-bottom: 20px
+    &-left
+      padding-left: 30px
+      min-width: 464px
+      padding-bottom: 30px
+  .left-titles
+    &__title
+      font-size: 27px
+      max-width: 333px
+  .title
+    &-recommended
+      font-size: 12px
+  .recommendation-list
+    &__title
+      font-size: 12px
+    &__description
+      font-size: 10px
+  .information
+    &__image
+      width: 100px
+      height: 100px
+    &__container
+      flex-wrap: wrap
+      justify-content: space-between
+
+    &__card
+      width: 38%
+      margin-left: 0
+      &:nth-child(1), &:nth-child(3)
+        &::after
+          height: 120px
+      &:nth-child(2)
+        &::after
+          background-color: transparent
+      &:nth-child(3), &:nth-child(4)
+        margin-top: 35px
+
+@media ( max-width: 767px)
+  .container
+    max-width: 576px
+    width: 87%
+  .navbar
+    &__logo
+      max-width: 100px
+    &__image
+      height: 30px
+      width: 30px
+    &__span
+      width: 60px
+    &-list
+      display: none
+      opacity: 0
+    &__button
+      padding: 5px 10px 5px 10px
+@media ( max-width: 767px )
+  .main
+    &-block
+      flex-direction: column
+    &-left
+      padding: 20px 15px 20px 15px
+      max-width: 100%
+      min-width: 100%
+      min-height: 412px
+      border-radius: 10px 10px 0 0
+      &__background-img
+        border-radius: 10px 10px 0 0
+    &-right
+      border-radius: 0 0 10px 10px
+  .left
+    &-info
+      min-width: 95px
+      max-width: 100%
+      justify-content: flex-start
+      &__avatar
+        height: 35px
+        width: 35px
+      &-text
+        margin-left: 10px
+        &__title
+          white-space: normal
+      &-titles
+        &__title
+          font-size: 20px
+  .information
+    padding-top: 582px
+  .recomendation
+    &__title
+      font-size: 14px
+    &__description
+      font-size: 12px

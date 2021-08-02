@@ -1,0 +1,38 @@
+.information
+  padding-top: 155px
+  background-color: #E5E5E5
+  &__container
+    background-color: #30363D
+    border-radius: 10px
+    padding: 30px 25px 35px 25px
+    display: flex
+  &__card
+    display: flex
+    align-items: center
+    width: 234px
+    justify-content: space-between
+    position: relative
+    margin-left: 51px
+    &::after
+      content: ''
+      width: 1px
+      height: 75px
+      background-color: #4B5157
+      right: -26px
+      position: absolute
+    &:last-child
+      &::after
+        background-color: transparent
+    &:first-child
+      margin-left: 0
+  &__text
+    font-style: normal
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    color: #FFFFFF
+    max-width: 151px
+  &__image
+    width: 65px
+    height: 65px
+    object-fit: cover

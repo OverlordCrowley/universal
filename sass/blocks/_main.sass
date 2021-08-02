@@ -1,0 +1,163 @@
+.main
+  height: 475px
+  background-color: $background-color-grey
+  padding: 30px 0 30px 0
+  overflow: visible
+  &-block
+    display: flex
+    justify-content: space-between
+    border-radius: 10px
+    min-height: 570px
+    overflow: visible
+    max-width: 100%
+  &-left
+    position: relative
+    z-index: 1
+    min-width: 877px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding: 55px 0 100px 55px
+    &::after
+      content: ''
+      width: 100%
+      height: 100%
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      border-radius: 0 0 0 10px
+      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+      z-index: -2
+    &__background
+      &-img
+        position: absolute
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        z-index: -2
+        object-fit: cover
+        width: 100%
+        height: 100%
+        border-radius: 10px 0 0 10px
+
+  &-right
+    background-color: #fff
+    border-radius: 0 10px 10px 0
+    max-height: 100%
+    min-height: 100%
+    overflow: hidden
+    padding-top: 20px
+.left
+  &-info
+    display: flex
+    justify-content: space-between
+    align-items: center
+    max-width: 136px
+    &__avatar
+      width: 45px
+      height: 45px
+      border-radius: 50%
+    &-text
+      &__title
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        line-height: 20px
+        color: #fff
+        white-space: nowrap
+      &__subtitle
+        font-style: normal
+        font-weight: 400
+        font-size: 12px
+        color: $button-background-grey
+        line-height: 15px
+  &-titles
+    &__subtitle
+      font-weight: 900
+      font-size: 12px
+      line-height: 15px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      color: #4592FF
+    &__title
+      font-family: 'Roboto Slab'
+      font-style: normal
+      font-weight: 700
+      font-size: 40px
+      line-height: 50px
+      color: #fff
+      max-width: 436px
+      margin-top: 19px
+      margin-bottom: 48px
+    &__button
+      display: block
+      padding: 10px 22px 11px 20px
+      min-width: 154px
+      width: 154px
+      background: #4592FF
+      border-radius: 20px
+    &__text
+      font-style: normal
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      color: #FFFFFF
+    &__image
+      margin-left: 8px
+.title-recommended
+  overflow: hidden
+  font-style: normal
+  font-weight: 900
+  font-size: 14px
+  line-height: 20px
+  letter-spacing: 0.3px
+  text-transform: uppercase
+  color: $title-color
+  padding-left: 25px
+  padding-bottom: 19px
+  display: block
+  border-bottom: 1px solid $border-color
+.recommendation-list
+  padding: 0
+  &__item
+    padding: 17px 25px 18px 25px
+    border-bottom: 1px solid $border-color
+    &:nth-child(4)
+      padding-bottom: 39px
+    &:last-child
+      border: none
+
+  &__title
+    font-style: normal
+    font-weight: 900
+    font-size: 12px
+    line-height: 15px
+    letter-spacing: 0.5px
+    text-transform: uppercase
+    word-wrap: break-word
+
+    &:nth-child(4)
+
+    &:nth-child(5)
+
+  &__description
+    word-wrap: break-word
+    margin-top: 6px
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: $standart-text-color
+.first-title
+  color: #3BBDC4
+.second-title
+  color: #6E99AE
+.third-title
+  color: #AC8EE3
+.fourth-title
+  color: #FFA34D
+.fifth-title
+  color: #3DC47E
