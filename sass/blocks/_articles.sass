@@ -2,6 +2,12 @@
   background-color: $body-color-secondary
   padding-top: 30px
   padding-bottom: 60px
+  &__like
+    display: flex
+    align-items: center
+    margin-left: 10px
+    & > .like__numb-opacity
+      margin-left: 5px
   &-grid
     display: grid
     grid-template-columns: repeat(4, 263px)
@@ -66,6 +72,8 @@
         &::after
           background: transparent
     &__content
+      display: flex
+      align-items: center
       &-tags
         padding: 0 19px 30px 17px
         height: 100%
@@ -274,9 +282,9 @@
       line-height: 20px
       color: $title-color
       margin-left: 10px
-      margin-right: 5px
-      max-width: 100px
       overflow: auto
+      max-width: 100px
+
       max-height: 20px
       &-medium
         font-weight: normal
@@ -294,10 +302,10 @@
       font-size: 14px
       line-height: 20px
       color: $standart-text-color
-      margin-right: 15px
-      overflow: auto
       max-height: 20px
-      max-width: 285px
+      width: 305px
+      overflow: auto
+      margin-right: -8px
       &-tags
         display: inline-block
         margin-left: 10px

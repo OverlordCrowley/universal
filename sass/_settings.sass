@@ -70,6 +70,67 @@
   display: flex
   justify-content: space-between
   white-space: break-word
+.small
+  &-card
+    background: #FFFFFF
+    border-radius: 10px
+    grid-column: 2
+    grid-row: 3
+    &__title
+      color: $title-color
+      max-width: 81%
+      overflow: auto
+      word-wrap: break-word
+      margin: 25px 25px 0 25px
+      font-family: 'Roboto Slab'
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      max-height: 50px
+      line-height: 25px
+    &__subtitle
+      margin-left: 25px
+      width: 100%
+      display: block
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      max-width: 80%
+      margin-top: 6px
+      color: $standart-text-color
+      max-height: 60px
+      height: 60px
+      overflow: auto
+      margin-bottom: 7px
+    &__date
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: $navbar-link-color
+      margin-left: 25px
+.button-watch-photo
+  padding: 10px 20px 10px 20px
+  background-color: #4592FF
+  border-radius: 20px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  border: none
+  min-width: 194px
+  &__text
+    font-style: normal
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    color: #FFFFFF
+  &__numb
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: #C5E4FC
 img
   max-width: 100%
   max-height: 100%
