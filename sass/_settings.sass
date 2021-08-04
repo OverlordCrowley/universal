@@ -9,27 +9,27 @@
 
 @font-face
   font-family: 'Lato'
-  src: url('./fonts/Lato/Lato-Bold.woff2') format('woff2'),
-  url('./fonts/Lato/Lato-Bold.woff') format('woff'),
-  url('./fonts/Lato/Lato-Bold.ttf') format('truetype')
+  src: url('..//fonts/Lato/Lato-Bold.woff2') format('woff2'),
+  url('..//fonts/Lato/Lato-Bold.woff') format('woff'),
+  url('..//fonts/Lato/Lato-Bold.ttf') format('truetype')
   font-weight: bold
   font-style: normal
   font-display: swap
 
 @font-face
   font-family: 'Lato'
-  src: url('./fonts/Lato/Lato-Medium.woff2') format('woff2'),
-  url('./fonts/Lato/Lato-Medium.woff') format('woff'),
-  url('./fonts/Lato/Lato-Medium.ttf') format('truetype')
+  src: url('..//fonts/Lato/Lato-Medium.woff2') format('woff2'),
+  url('..//fonts/Lato/Lato-Medium.woff') format('woff'),
+  url('..//fonts/Lato/Lato-Medium.ttf') format('truetype')
   font-weight: 500
   font-style: normal
   font-display: swap
 
 @font-face
   font-family: 'Lato'
-  src: url('./fonts/Lato/Lato-Regular.woff2') format('woff2'),
-  url('./fonts/Lato/Lato-Regular.woff') format('woff'),
-  url('./fonts/Lato/Lato-Regular.ttf') format('truetype')
+  src: url('..//fonts/Lato/Lato-Regular.woff2') format('woff2'),
+  url('..//fonts/Lato/Lato-Regular.woff') format('woff'),
+  url('..//fonts/Lato/Lato-Regular.ttf') format('truetype')
   font-weight: normal
   font-style: normal
   font-display: swap
@@ -38,7 +38,10 @@
   box-sizing: border-box
   text-decoration: none
   list-style-type: none
-  font-family: 'Lato', sans-serif
+  font-family: 'Lato'
+  font-weight: normal
+  font-style: normal
+  font-display: swap
   margin: 0
 
 .container
@@ -52,6 +55,7 @@
   width: 154px
   background: #4592FF
   border-radius: 20px
+  cursor: pointer
   &__text
     font-style: normal
     font-weight: 900
@@ -113,6 +117,7 @@
 .button-watch-photo
   padding: 10px 20px 10px 20px
   background-color: #4592FF
+  cursor: pointer
   border-radius: 20px
   display: flex
   align-items: center
