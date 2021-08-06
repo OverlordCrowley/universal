@@ -1,16 +1,17 @@
 .publications
   background-color: $body-color-secondary
-  padding: 60px 0 62px 0
+  padding: 60px 0 61px 0
   &__like
-    margin-left: 19px
+    margin-left: 6px
   &-container
     display: flex
+  &__comments
+    margin-left: 5px
   &-main
     width: 848px
     background-color: #fff
-    padding: 24px 25px 0 25px
+    padding: 25px 25px 0 25px
     border-radius: 10px
-
     &__item
       display: flex
       position: relative
@@ -29,9 +30,11 @@
     &__bookmark
       position: absolute
       right: 3px
-      top: 0
+      top: 1px
+      z-index: 5
       fill: #BCBFC2
-
+    &__bookmark-active
+      fill: #FF4F52
     &-text
       display: flex
       flex-direction: column
@@ -60,7 +63,7 @@
       font-weight: bold
       font-size: 20px
       line-height: 25px
-      margin-bottom: 11px
+      margin-bottom: 10px
 
     &__description
       font-style: normal
@@ -71,10 +74,12 @@
       height: 60px
       overflow: auto
       color: $standart-text-color
-      margin-bottom: 20px
+      margin-bottom: 19px
+      word-wrap: break-word
     &__info
       color: $navbar-link-color
       justify-content: flex-start
+      align-items: center
       opacity: 1
       &-mt
         margin-top: 25px
@@ -89,7 +94,9 @@
     border-radius: 10px
     width: 263px
     margin-left: 29px
-    height: 770px
+    min-height: 770px
+    max-height: 770px
+
     &__text
       margin-left: 10px
     &__main
@@ -99,115 +106,152 @@
         font-size: 14px
         line-height: 20px
         color: $standart-text-color
-        margin-bottom: 2px
+        margin-bottom: 5px
         margin-top: 1px
+        max-height: 40px
+        height: 40px
+        max-width: 138px
+        word-wrap: break-word
+        overflow: auto
     &__more
       font-style: normal
       font-weight: 900
       font-size: 14px
       line-height: 20px
+      padding-top: 10px
       text-align: center
       cursor: pointer
+      margin-top: auto
       display: block
       margin-top: 11px
+      border-top: 1px solid $border-color
     &__date
       font-style: normal
       font-weight: normal
       font-size: 12px
       line-height: 15px
       color: $navbar-link-color
+      word-wrap: break-word
+      max-width: 138px
+      width: 138px
+      height: 15px
+      max-height: 15px
+      overflow: auto
+      display: block
     &__item
       display: flex
-      padding-left: 25px
-      padding-right: 25px
-      padding-bottom: 16px
+      margin-left: 25px
+      margin-right: 25px
+      padding-bottom: 17px
       margin-top: 17px
       position: relative
       cursor: pointer
       border-bottom: 1px solid $border-color
+      &:nth-child(6) > .publications-new__main-title
+        margin-top: 0
       &::after
         content: ''
         position: absolute
-        right: 24px
+        right: 0
         top: 5px
         background-image: url(..//images/1.svg)
         background-position: center center
         object-fit: cover
         background-repeat: no-repeat
         width: 41px
-        height: 50px
+        height: 51px
       &:nth-child(3)
+        & > .publications-new__text > .publications-new__main-title
+          margin-bottom: 4px
         &::after
           content: ''
           position: absolute
-          right: 24px
+          right: 0
           top: 5px
           background-image: url(..//images/2.svg)
           background-position: center center
           object-fit: cover
           background-repeat: no-repeat
           width: 41px
-          height: 50px
+          height: 51px
       &:nth-child(4)
+        margin-top: 16px
+
+        & > .publications-new__text > .publications-new__main-title
+          margin-bottom: 5px
         &::after
           content: ''
           position: absolute
-          right: 24px
+          right: 0
           top: 5px
           background-image: url(..//images/3.svg)
           background-position: center center
           object-fit: cover
           background-repeat: no-repeat
           width: 41px
-          height: 50px
+          height: 51px
       &:nth-child(5)
+
+        & > .publications-new__text > .publications-new__main-title
+          margin-bottom: 5px
         &::after
           content: ''
           position: absolute
-          right: 24px
+          right: 0
           top: 5px
           background-image: url(..//images/4.svg)
           background-position: center center
           object-fit: cover
           background-repeat: no-repeat
           width: 41px
-          height: 50px
+          height: 51px
       &:nth-child(6)
+        & > .publications-new__text > .publications-new__main-title
+          margin-bottom: 2px
+          margin-top: 0
         &::after
           content: ''
           position: absolute
-          right: 24px
+          right: 0
           top: 5px
           background-image: url(..//images/5.svg)
           background-position: center center
           object-fit: cover
           background-repeat: no-repeat
           width: 41px
-          height: 50px
+          height: 51px
       &:nth-child(7)
+        & > .publications-new__text > .publications-new__main-title
+          margin-bottom: 3px
+          margin-top: 0
         &::after
           content: ''
           position: absolute
-          right: 24px
+          right: 0
           top: 5px
           background-image: url(..//images/6.svg)
           background-position: center center
           object-fit: cover
           background-repeat: no-repeat
           width: 41px
-          height: 50px
+          height: 51px
       &:nth-child(8)
+        padding-bottom: 6px
+        border: none
+        & > .publications-new__text > .publications-new__main-title
+          margin-bottom: 4px
+          margin-top: 0
         &::after
           content: ''
           position: absolute
-          right: 24px
+          right: 0
           top: 5px
           background-image: url(..//images/7.svg)
           background-position: center center
           object-fit: cover
           background-repeat: no-repeat
           width: 41px
-          height: 50px
+          height: 51px
 
     &__img
       width: 60px
@@ -219,6 +263,9 @@
       font-weight: 900
       font-size: 14px
       line-height: 20px
+      max-height: 60px
+      word-wrap: break-word
+      overflow: auto
       letter-spacing: 0.5px
       color: $title-color
       text-transform: uppercase
@@ -227,6 +274,6 @@
 
   &-ml
     &-11
-      margin-left: 11px
+      margin-left: 6px
     &-4
-      margin-left: 4px
+      margin-left: 6px

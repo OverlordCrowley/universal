@@ -4,6 +4,8 @@
   .navbar
     &__logo
       width: 130px
+    &-list
+      margin-top: 5px
     &__span
       width: 90px
       margin-left: 10px
@@ -13,7 +15,207 @@
   .main
     &-left
       min-width: 691px
+  .articles
+    &-grid
+      grid-template-columns: repeat(4, 1fr)
+      grid-template-rows: repeat(4, 170px)
+      &__item
+        &-medium
+          padding: 21px 15px 10px 15px
+          &-vertic
+            padding: 0
+        &-tags
+          padding: 0
+          padding-top: 15px
+      &__info
+      &__content
+        &-tags
+          margin-top: 15px
+          padding-left: 8px
+          max-height: 87%
+          height: 87%
+          margin-right: 0
+        &-small
+          &-social
+            max-width: 170px
+      &__name
+        width: 129px
+        max-width: 129px
+        font-size: 13px
+      &__main-title
+        margin-left: 25px
+
+        &-medium
+          margin-left: 0
+          margin-top: 100px
+      &__comment
+        &-medium
+          align-items: center
+      &__avatar
+        &-medium
+          width: 35px
+          height: 35px
+      &__title
+        margin-left: 25px
+        max-width: 193px
+        font-size: 21px
+        &-tags
+          font-size: 15px
+          margin: 0
+          padding: 0
+          width: 100%
+          padding-left: 15px
+          padding-bottom: 30px
+          max-height: 40px
+          max-width: 100%
+        &-redact
+          margin-left: 0
+          margin-right: 0
+          width: 252px
+          max-width: 252px
+          padding: 0 15px
+          margin-top: 35px
+          overflow: auto
+          margin-bottom: 0
+        &-medium
+          margin-left: 0
+          font-size: 14px
+          margin-bottom: 45px
+      &__desctiption
+        margin-left: 25px
+        max-width: 193px
+        width: 193px
+        font-size: 12px
+      &__user
+        margin-left: 25px
+      &__img
+        width: 250px
+        margin-left: 25px
+        &-vertic
+          height: 60%
+      &__title
+        &-small
+          font-size: 12px
+          margin-left: 15px
+          margin-right: 15px
+          &-altered
+            font-size: 13px
+          &-social
+            font-size: 18px
+      &__subtitle
+        &-small
+          font-size: 12px
+          margin-left: 15px
+          &-altered
+            margin-left: 15px
+            margin-right: 15px
+            max-width: 177px
+            width: 177px
+            font-size: 11px
+      &__text
+        font-size: 11px
+        margin-left: 0
+        &-tags
+          margin-left: 5px
+  .information
+    &__text
+      margin-right: 5px
+  .comments
+    &-medium
+      margin-left: 0
+      margin-top: 2px
+    &__numb
+      font-size: 10px
+  .articles__like
+    margin-top: 2px
+    margin-left: 10px
+  .popular
+    font-size: 10px
+  .date
+    display: block
+    max-width: 110px
+    &-altered
+      margin-left: 15px
+      margin-right: 15px
+      width: 85px
+  .like
+    align-items: center
+    &__numb
+      font-size: 10px
+  .publications
+    &__like
+      margin-top: 1px
+    &-new
+      max-width: 220px
+      min-height: 785px
+      max-height: 790px
+      &__title
+        padding-left: 5px
+        padding-right: 5px
+      &__item
+        margin-right: 15px
+        margin-left: 15px
+      &__main
+        &-title
+          font-size: 12px
+      &__main
+        &-title
+          max-width: 120px
+          width: 120px
+    &-main
+      padding-right: 15px
+      padding-left: 15px
+      &__img
+        width: 215px
+      &__info
+        justify-content: flex-start
+      &__icon
+        width: 15px
+        height: 14px
+  .hot
+    &-item
+      &__title
+        font-size: 30px
+  .small-card
+    &__title
+      font-size: 13px
+      margin-left: 15px
+      margin-right: 15px
+    &__subtitle
+      margin-left: 15px
+      margin-right: 15px
+      max-width: 177px
+      width: 177px
+      font-size: 11px
+    &__date
+      margin-left: 15px
+      margin-right: 15px
+      width: 85px
+
 @media ( max-width: 992px)
+  .navbar-list__item, .footer-top__link, .footer-middle-left__link
+    &:hover
+      text-decoration: none
+    &:active
+      text-decoration: none
+  .navbar__button
+    &:hover
+      background-color: $button-background-grey
+    &:active
+      background-color: $button-background-grey
+  .button-blue, .button-watch-photo, .subscribe
+    &:hover
+      background-color: #4592FF
+    &:active
+      background-color: #4592FF
+  .articles-grid__content-small-social__link, .footer-middle-right__social
+    &:hover
+      border: none
+    &:active
+      border: none
+  .investigation
+    &__title
+      font-size: 32px
   .container
     max-width: 730px
   .navbar
@@ -60,9 +262,8 @@
     &__container
       flex-wrap: wrap
       justify-content: space-between
-
     &__card
-      width: 38%
+      width: 45%
       margin-left: 0
       &:nth-child(1), &:nth-child(3)
         &::after
@@ -72,14 +273,148 @@
           background-color: transparent
       &:nth-child(3), &:nth-child(4)
         margin-top: 35px
-
-@media ( max-width: 767px)
+  .articles-grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: repeat(6, 170px)
+    &__item
+      &-small
+        grid-column: 1
+        grid-row: 5 / 5
+        &-altered
+          grid-column: 2
+          grid-row: 5 / 5
+      &-medium
+        grid-column: 1 / 3
+        grid-row: 3 / 5
+        &-vertic
+          grid-column: 3 / 3
+          grid-row: 1 / 3
+      &-tags
+        grid-column: 3 / 3
+        grid-row: 3 / 5
+    &__img
+      width: 229px
+  .altered
+    &-second
+      grid-column: 3
+      grid-row: 5 / 5
+    &-third
+      grid-column: 1
+      grid-row: 6
+    &-fourth
+      grid-column: 2
+      grid-row: 6
+    &-fifth
+      grid-column: 3
+      grid-row: 6
+  .date
+    display: inline
+    width: auto
+    margin-top: 2px
+  .comments
+    margin-right: 25px
+    &-medium
+      margin-left: 10px
+      margin-right: 0
+  .articles-grid__title-medium
+    max-width: 283px
+  .publications
+    &-container
+    &__like
+      margin-top: 1px
+    &-new
+      min-height: 785px
+      margin-left: 10px
+      max-width: 218px
+      max-height: auto
+      &__more
+        align-self: center
+      &__title
+        padding-left: 15px
+        padding-right: 15px
+      &__item
+        margin-right: 15px
+        margin-left: 15px
+      &__main
+        &-title
+          font-size: 12px
+          max-width: 170px
+      &__date
+        display: block
+    &-main
+      padding-right: 15px
+      padding-left: 15px
+      max-width: 100%
+      width: 602px
+      &-text
+        margin-left: 15px
+      &__item
+        display: flex
+        align-items: start
+        justify-content: start
+      &__img
+        width: 150px
+        height: 150px
+        margin-top: 43px
+      &__info
+        margin-top: 0
+      &__title
+        max-width: 307px
+        font-size: 17px
+      &__description
+        max-width: 307px
+        font-size: 12px
+        height: 80px
+        max-height: 80px
+        margin-bottom: 20px
+      &__info
+        justify-content: flex-start
+      &__icon
+        width: 15px
+        height: 14px
+  .date
+  .publications-new__title
+    max-height: 80px
+    min-height: 80px
+    height: 80px
+  .hot
+    &-item
+      &__title
+        font-size: 17px
+        line-height: 30px
+  .footer
+    &-middle
+      flex-direction: column
+      &-right
+        margin-top: 25px
+    &-bottom
+      &__text
+        max-width: 70%
+      &__copyright
+        max-width: 175px
+  .publications
+    &__date
+      margin-top: -1px
+@media ( max-width: 767px )
   .container
     max-width: 576px
-    width: 87%
+    width: 576px
   .navbar
+    &-mobile
+      &-fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 99
+    &__button
+      display: none
+
     &__logo
       max-width: 100px
+      & > h1
+        display: flex
+        align-items: center
     &__image
       height: 30px
       width: 30px
@@ -90,10 +425,12 @@
       opacity: 0
     &__button
       padding: 5px 10px 5px 10px
-@media ( max-width: 767px )
   .main
+    padding-top: 90px
     &-block
       flex-direction: column
+      width: 100%
+      max-width: 100%
     &-left
       padding: 20px 15px 20px 15px
       max-width: 100%
@@ -122,8 +459,11 @@
         line-height: 30px
         margin-bottom: 29px
   .information
-    padding-top: 479px
+    padding-top: 555px
     max-width: 100%
+    &__container
+      padding-bottom: 25px
+      padding-top: 25px
     &__text
       font-size: 17px
       width: 100%
@@ -133,7 +473,8 @@
     &__image
       order: 1
       width: 100%
-      height: 250px
+      height: 200px
+      border-radius: 10px 10px 0 0
     &__card
       width: 100%
       margin-top: 25px
@@ -143,9 +484,303 @@
       justify-content: space-between
       &::after
         background-color: transparent
+      &:first-child
+        margin-top: 0
   .recomendation
     &__title
       font-size: 14px
-
     &__description
       font-size: 12px
+    &-list
+      &__title
+        font-size: 14px
+  .recommendation-list__description
+    font-size: 13px
+  .button-blue
+    &__text
+      font-size: 12px
+
+  .publications
+    &-container
+      flex-direction: column
+    &-main
+      padding-top: 0
+      padding-right: 0
+      padding-left: 0
+      padding-bottom: 15px
+      padding-top: 15px
+      &__bookmark
+        top: 54%
+        right: 35px
+      &__title
+        max-width: 100%
+        width: 100%
+      &-text
+        width: 100%
+        max-width: 100%
+        margin-top: 25px
+        margin-left: 0
+        padding-right: 25px
+        padding-left: 25px
+      &__img
+        width: 100%
+        margin-top: 0
+        max-width: 100%
+
+        border-radius: 10px 10px 0 0
+        height: 250px
+      &__description
+        max-width: 100%
+        width: 100%
+      &__item
+        flex-direction: column
+        border: 1px solid $border-color
+        margin-right: 15px
+        margin-left: 15px
+        border-radius: 10px
+        &:last-child
+          border: 1px solid $border-color
+    &-new
+      margin-top: 25px
+      margin-left: 0
+      width: 100%
+      max-width: 100%
+      &__title
+        padding-bottom: 20px
+        width: 100%
+        max-width: 100%
+        height: 20px
+        padding-top: 30px
+        max-height: 20px
+        text-align: center
+      &__item
+        max-width: 100%
+  .hot
+    &-grid
+      grid-template-columns: repeat(2, 1fr)
+      grid-template-rows: repeat(6, 1fr)
+    &-item
+      grid-column: 1 / 3
+      grid-row: 3 / 5
+      &big
+  .swiper-container
+    grid-column: 1 / 3
+    grid-row: 1 / 3
+  .small-card
+    &-1
+      grid-column: 1 / 2
+      grid-row: 5
+    &-2
+      grid-column: 1 / 2
+      grid-row: 6
+  .articles
+    &-grid
+      grid-template-columns: repeat(1, 300px)
+      grid-template-rows: repeat(15, 170px)
+      max-width: 100%
+      width: 100%
+      &__link
+        margin-top: 20px
+      &__comments
+        margin-top: 10px
+        margin-left: 25px
+        margin-right: 25px
+      &__title
+        width: 250px
+        max-width: 250px
+        margin-right: 25px
+        &-small
+          font-size: 16px
+          &-altered
+            max-width: 274px
+            width: 274px
+        &-redact
+          max-width: 300px
+          width: 300px
+          margin-right: 0
+        &-tags
+          max-width: 100%
+          width: 100%
+      &__desctiption
+        margin-bottom: 220px
+        width: 85%
+        max-width: 85%
+        margin-right: 25px
+      &__comment
+        margin-bottom: 12px
+        flex-wrap: wrap
+      &__item
+        &_big
+          grid-column: 1
+          z-index: 1
+          grid-row: 1 / 4
+        &-medium
+          grid-column: 1
+          grid-row: 4 / 6
+          &-vertic
+            grid-column: 1
+            grid-row: 6 / 8
+        &-tags
+          grid-column: 1
+          grid-row: 8 / 10
+        &-small
+          grid-column: 1
+          grid-row: 10
+          &-altered
+            grid-column: 1
+            grid-row: 11
+      &__subtitle
+        &-small
+          font-size: 14px
+          &-altered
+            max-width: 274px
+            width: 274px
+      &__name
+        max-width: 93px
+        width: 93px
+      &__user
+        width: 50%
+        max-width: 50%
+      &__text
+        width: 41%
+        max-width: 41%
+      &__img
+        right: 0
+        left: 0
+        top: 215px
+        width: 100%
+        height: 300px
+        position: absolute
+        z-index: -1
+
+  .altered
+    &-second
+      grid-column: 1
+      grid-row: 12
+    &-third
+      grid-column: 1
+      grid-row: 13
+    &-fourth
+      grid-column: 1
+      grid-row: 14
+    &-fifth
+      grid-column: 1
+      grid-row: 15
+  .investigation
+    &__title
+      font-size: 26px
+  .publications
+  .footer
+    &-top
+      flex-direction: column
+    &-middle
+      &-left
+        flex-wrap: wrap
+  .mailing
+    &__form
+      flex-direction: column
+    &__input
+      width: 100%
+  .investigation
+    &__title
+      font-size: 22px
+      padding-right: 15px
+      padding-left: 15px
+      line-height: 30px
+    &__button
+      max-width: 154px
+      width: 154px
+      min-width: 154px
+  .publications
+    &-main
+      &__bookmark
+        top: 278px
+    &-new
+      &__main
+        &-title
+          max-width: 200px
+          width: 200px
+      &__date
+        max-width: 200px
+        width: 200px
+        word-wrap: break-word
+        overflow: auto
+  .hot
+    &-item
+      &__title
+        max-height: 90px
+        height: 90px
+        margin-bottom: 25px
+      &-big
+        padding-left: 15px
+        padding-bottom: 25px
+        &__title
+          max-width: 152px
+          width: 152px
+          height: 136px
+          max-height: 136px
+        &__text
+          max-width: 152px
+          width: 152px
+          height: 90px
+          max-height: 90px
+          margin-bottom: 5px
+        &__image
+          height: 100%
+          border-radius: 0 10px 10px 0
+  .swiper-pagination
+    margin-bottom: 5px
+  .small-card
+    width: 100%
+    max-width: 100%
+    grid-column: 1 / 3
+    &__title
+      font-size: 16px
+      margin-left: 15px
+      margin-right: 15px
+      max-width: 274px
+      width: 274px
+    &__subtitle
+      margin-left: 15px
+      margin-right: 15px
+      max-width: 274px
+      width: 274px
+      font-size: 14px
+  .mailing
+    &__title
+      font-size: 26px
+    &__subs
+      margin-top: 15px
+      width: 100%
+      margin-left: 0
+  .footer
+    &-top
+      &__item
+        width: 100%
+        margin-bottom: 15px
+        &:last-child
+          width: 100%
+      &__title
+        padding-top: 15px
+    &-middle
+      &-left
+        flex-direction: column
+        align-items: flex-start
+        &__image-link
+          margin-bottom: 10px
+        &__link
+          margin-left: 0
+          margin-bottom: 10px
+    &-bottom
+      flex-direction: column
+      padding-bottom: 15px
+      &__text
+        width: 100%
+        max-width: 100%
+        margin-bottom: 20px
+      &__copyright
+        width: 100%
+        max-width: 100%
+@media ( max-width: 576px  )
+  .container
+    max-width: 300px

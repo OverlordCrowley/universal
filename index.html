@@ -4,6 +4,9 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+		<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="./styles/swiper-bundle.min.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -14,7 +17,7 @@
 		<title>Universal</title>
 	</head>
 	<body>
-		<header class="navbar">
+		<header class="navbar navbar-mobile-fixed">
 			<div class="container">
 				<div class="navbar__items">
 					<a href="index.html" class="navbar__logo">
@@ -57,11 +60,16 @@
 					<button class="button navbar__button">Оставить Заявку</button>
 				</div>
 			</div>
+			<div class="navbar-bottom">
+				<span class="navbar-bottom__line"></span>
+				<span class="navbar-bottom__line"></span>
+				<span class="navbar-bottom__line"></span>
+			</div>
 		</header>
 		<section class="main">
 			<div class="container">
 				<div class="main-block">
-					<div class="main-left">
+					<div id="css-1" class="main-left main-left-active">
 						<img
 							src="./images/main-image.jpg"
 							alt="Image: Background image"
@@ -93,6 +101,132 @@
 							/></a>
 						</div>
 					</div>
+					<div id="js-1" class="main-left">
+						<img
+							src="./images/javascript_prog.jpg"
+							alt="Image: Background image"
+							class="main-left__background-img"
+						/>
+						<div class="left-info">
+							<img
+								src="./images/top-avatar-2.jfif"
+								alt="Image: User avatar"
+								class="left-info__avatar"
+							/>
+							<div class="left-info-text">
+								<h6 class="left-info-text__title">Иван Рудской</h6>
+								<span class="left-info-text__subtitle"
+									>JavaScript разработчик</span
+								>
+							</div>
+						</div>
+						<div class="left-titles">
+							<span class="left-titles__subtitle">Javascript</span>
+							<h2 class="left-titles__title">Создание слайдера</h2>
+							<a href="#" class="button left-titles__button button-blue"
+								><span class="button-blue__text left-titles__text"
+									>Читать далее</span
+								><img
+									src="./images/Arrow.svg"
+									alt="Icon: Arrow next"
+									class="button-blue__image left-titles__image"
+							/></a>
+						</div>
+					</div>
+					<div id="html-1" class="main-left">
+						<img
+							src="./images/html-devel.jpg"
+							alt="Image: Background image"
+							class="main-left__background-img"
+						/>
+						<div class="left-info">
+							<img
+								src="./images/top-avatar-3.jfif"
+								alt="Image: User avatar"
+								class="left-info__avatar"
+							/>
+							<div class="left-info-text">
+								<h6 class="left-info-text__title">Татьяна Гурская</h6>
+								<span class="left-info-text__subtitle">Верстальщик</span>
+							</div>
+						</div>
+						<div class="left-titles">
+							<span class="left-titles__subtitle">HTML</span>
+							<h2 class="left-titles__title">
+								Правильное создание разметки сайта
+							</h2>
+							<a href="#" class="button left-titles__button button-blue"
+								><span class="button-blue__text left-titles__text"
+									>Читать далее</span
+								><img
+									src="./images/Arrow.svg"
+									alt="Icon: Arrow next"
+									class="button-blue__image left-titles__image"
+							/></a>
+						</div>
+					</div>
+					<div id="web-design-1" class="main-left">
+						<img
+							src="./images/web-design.jpeg"
+							alt="Image: Background image"
+							class="main-left__background-img"
+						/>
+						<div class="left-info">
+							<img
+								src="./images/top-avatar-4.jfif"
+								alt="Image: User avatar"
+								class="left-info__avatar"
+							/>
+							<div class="left-info-text">
+								<h6 class="left-info-text__title">Данил Мельников</h6>
+								<span class="left-info-text__subtitle">Веб дизайнер</span>
+							</div>
+						</div>
+						<div class="left-titles">
+							<span class="left-titles__subtitle">WEB DESIGN</span>
+							<h2 class="left-titles__title">
+								Создание профессионального дизайна
+							</h2>
+							<a href="#" class="button left-titles__button button-blue"
+								><span class="button-blue__text left-titles__text"
+									>Читать далее</span
+								><img
+									src="./images/Arrow.svg"
+									alt="Icon: Arrow next"
+									class="button-blue__image left-titles__image"
+							/></a>
+						</div>
+					</div>
+					<div id="css-2" class="main-left">
+						<img
+							src="./images/css-code.jpeg"
+							alt="Image: Background image"
+							class="main-left__background-img"
+						/>
+						<div class="left-info">
+							<img
+								src="./images/top-avatar-5.jfif"
+								alt="Image: User avatar"
+								class="left-info__avatar"
+							/>
+							<div class="left-info-text">
+								<h6 class="left-info-text__title">Катя Смирнова</h6>
+								<span class="left-info-text__subtitle">Css разработчик</span>
+							</div>
+						</div>
+						<div class="left-titles">
+							<span class="left-titles__subtitle">CSS</span>
+							<h2 class="left-titles__title">Фишки в CSS</h2>
+							<a href="#" class="button left-titles__button button-blue"
+								><span class="button-blue__text left-titles__text"
+									>Читать далее</span
+								><img
+									src="./images/Arrow.svg"
+									alt="Icon: Arrow next"
+									class="button-blue__image left-titles__image"
+							/></a>
+						</div>
+					</div>
 					<div class="main-right">
 						<span class="title-recommended">Рекомендуем</span>
 						<ul class="recommendation-list">
@@ -100,14 +234,14 @@
 								class="
 									recommendation-list__item recommendation-list__item-active
 								"
-								data-target="first"
+								data-target="#css-1"
 							>
 								<span class="recommendation-list__title first-title">css</span>
 								<p class="recommendation-list__description">
 									Как использовать CSS float после&nbsp;того, как вышел Flexbox
 								</p>
 							</li>
-							<li class="recommendation-list__item" data-target="second">
+							<li class="recommendation-list__item" data-target="#js-1">
 								<span class="recommendation-list__title second-title"
 									>javascript</span
 								>
@@ -115,13 +249,13 @@
 									На каком стандарте писать скрипты,&nbsp;если я фрилансер
 								</p>
 							</li>
-							<li class="recommendation-list__item" data-target="third">
+							<li class="recommendation-list__item" data-target="#html-1">
 								<span class="recommendation-list__title third-title">html</span>
 								<p class="recommendation-list__description">
 									Правильно вставляем картинку на&nbsp;сайт для Retina дисплея
 								</p>
 							</li>
-							<li class="recommendation-list__item" data-target="fourth">
+							<li class="recommendation-list__item" data-target="#web-design-1">
 								<span class="recommendation-list__title fourth-title"
 									>Web design</span
 								>
@@ -129,7 +263,7 @@
 									ТОП-10 плагинов для Figma
 								</p>
 							</li>
-							<li class="recommendation-list__item" data-target="fifth">
+							<li class="recommendation-list__item" data-target="#css-2">
 								<span class="recommendation-list__title fifth-title">CSS</span>
 								<p class="recommendation-list__description">
 									Возможности CSS Grid Layout , которые уже можно применять
@@ -203,7 +337,7 @@
 							<div class="articles-grid__text">
 								Каждый разработчик мечтает переехать&nbsp;в...
 							</div>
-							<span class="comments">
+							<span class="comments articles-grid__comments">
 								<img
 									src="./images/Comment.svg"
 									alt="Icon: message"
@@ -234,7 +368,7 @@
 									>Сара Женникова</span
 								>
 								<div class="info articles-grid__info">
-									<span class="date">25 сентября</span>
+									<span class="date date-medium">25 сентября</span>
 									<span class="comments comments-medium">
 										<img
 											src="./images/Comment-light.svg"
@@ -302,9 +436,7 @@
 							><span class="articles-grid__text-tags">Night</span>
 						</div>
 					</div>
-					<div
-						class="articles-grid__item-small articles-grid__item-small-altered"
-					>
+					<div class="articles-grid__item-small-altered">
 						<h6
 							class="
 								articles-grid__title-small articles-grid__title-small-altered
@@ -451,7 +583,7 @@
 				/></a>
 			</div>
 		</section>
-		<section class="publications" id="#publications">
+		<section class="publications" id="publications">
 			<div class="container publications-container">
 				<div class="publications-main">
 					<div class="publications-main__item">
@@ -486,8 +618,8 @@
 								режим и кому он подходит, а кому нет.
 							</p>
 							<div class="info publications-main__info">
-								<span class="date">6 августа</span>
-								<span class="comments comments-medium">
+								<span class="date publications__date">6 августа</span>
+								<span class="comments comments-medium publications__comments">
 									<img
 										src="./images/Comment.svg"
 										alt="Icon: message"
@@ -531,7 +663,9 @@
 							viewBox="0 0 14 18"
 							fill="none"
 							xmlns="http://www.w3.org/2000/svg"
-							class="publications-main__bookmark"
+							class="
+								publications-main__bookmark publications-main__bookmark-active
+							"
 						>
 							<path
 								fill-rule="evenodd"
@@ -554,8 +688,8 @@
 								они не берут в расчет, что лучшее обучение — это практика.
 							</p>
 							<div class="info publications-main__info">
-								<span class="date">7 октября</span>
-								<span class="comments comments-medium">
+								<span class="date publications__date">7 октября</span>
+								<span class="comments comments-medium publications__comments">
 									<img
 										src="./images/Comment.svg"
 										alt="Icon: message"
@@ -623,8 +757,8 @@
 								бизнес зависит от этого мессенджера.
 							</p>
 							<div class="info publications-main__info">
-								<span class="date">12 декабря</span>
-								<span class="comments comments-medium">
+								<span class="date publications__date">12 декабря</span>
+								<span class="comments comments-medium publications__comments">
 									<img
 										src="./images/Comment.svg"
 										alt="Icon: message"
@@ -692,8 +826,8 @@
 								провел эксперимент и потенциальные заказчики...
 							</p>
 							<div class="info publications-main__info">
-								<span class="date">20 июля</span>
-								<span class="comments comments-medium">
+								<span class="date publications__date">20 июля</span>
+								<span class="comments comments-medium publications__comments">
 									<img
 										src="./images/Comment.svg"
 										alt="Icon: message"
@@ -763,8 +897,8 @@
 							<div
 								class="info publications-main__info publications-main__info-mt"
 							>
-								<span class="date">22 октября</span>
-								<span class="comments comments-medium">
+								<span class="date publications__date">22 октября</span>
+								<span class="comments comments-medium publications__comments">
 									<img
 										src="./images/Comment.svg"
 										alt="Icon: message"
@@ -832,8 +966,8 @@
 								видеоуроки, лекции и бесплатные курсы.
 							</p>
 							<div class="info publications-main__info">
-								<span class="date">26 октября</span>
-								<span class="comments comments-medium">
+								<span class="date publications__date">26 октября</span>
+								<span class="comments comments-medium publications__comments">
 									<img
 										src="./images/Comment.svg"
 										alt="Icon: message"
@@ -966,37 +1100,185 @@
 		<section class="hot" id="hot">
 			<div class="container">
 				<div class="hot-grid">
-					<div class="hot-item hot-item-huge">
-						<span class="popular hot-item__popular">Горячее</span>
-						<div class="hot-item__text">
-							<div class="hot-item__user">
-								<img
-									src="./images/hot-avatar.png"
-									alt="Images: user image"
-									class="hot-item__user-img"
-								/>
-								<div class="hot-item__name">Оксана Пушкина</div>
-								<span class="hot-item__specialty">Фотограф</span>
+					<div class="swiper-container">
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper">
+							<!-- Slides -->
+							<div class="swiper-slide">
+								<div class="hot-item hot-item-huge">
+									<span class="popular hot-item__popular">Горячее</span>
+									<div class="hot-item__text">
+										<div class="hot-item__user">
+											<img
+												src="./images/hot-avatar.png"
+												alt="Images: user image"
+												class="hot-item__user-img"
+											/>
+											<div class="hot-item__name">Оксана Пушкина</div>
+											<span class="hot-item__specialty">Фотограф</span>
+										</div>
+									</div>
+									<h2 class="hot-item__title">
+										Выбор читателей: где удобнее работать фрилансеру
+									</h2>
+									<button class="button-watch-photo hot__button-watch-photo">
+										<img
+											src="./images/Images.svg"
+											alt="Icon: images"
+											class="button-watch-photo__images"
+										/>
+										<span class="button-watch-photo__text">Смотреть фото</span>
+										<span class="button-watch-photo__numb">26</span>
+									</button>
+
+									<img
+										src="./images/photos-of-laughing-people.jfif"
+										alt="Image: photos of laughing people"
+										class="hot-item__image"
+									/>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="hot-item hot-item-huge">
+									<span class="popular hot-item__popular">Горячее</span>
+									<div class="hot-item__text">
+										<div class="hot-item__user">
+											<img
+												src="./images/hot-avatar-1.jfif"
+												alt="Images: user image"
+												class="hot-item__user-img"
+											/>
+											<div class="hot-item__name">Валерий Калашников</div>
+											<span class="hot-item__specialty">Фрилансер</span>
+										</div>
+									</div>
+									<h2 class="hot-item__title">
+										Выбор читателей: выбор направления на фрилансе
+									</h2>
+									<button class="button-watch-photo hot__button-watch-photo">
+										<img
+											src="./images/Images.svg"
+											alt="Icon: images"
+											class="button-watch-photo__images"
+										/>
+										<span class="button-watch-photo__text">Смотреть фото</span>
+										<span class="button-watch-photo__numb">6</span>
+									</button>
+
+									<img
+										src="./images/hot-bg-2.jpg"
+										alt="Image: photos of laughing people"
+										class="hot-item__image"
+									/>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="hot-item hot-item-huge">
+									<span class="popular hot-item__popular">Горячее</span>
+									<div class="hot-item__text">
+										<div class="hot-item__user">
+											<img
+												src="./images/hot-avatar-2.jfif"
+												alt="Images: user image"
+												class="hot-item__user-img"
+											/>
+											<div class="hot-item__name">Тимофей Уранов</div>
+											<span class="hot-item__specialty"
+												>JavaScript разработчик</span
+											>
+										</div>
+									</div>
+									<h2 class="hot-item__title">
+										Выбор читателей: лучшие библиотеки JS
+									</h2>
+									<button class="button-watch-photo hot__button-watch-photo">
+										<img
+											src="./images/Images.svg"
+											alt="Icon: images"
+											class="button-watch-photo__images"
+										/>
+										<span class="button-watch-photo__text">Смотреть фото</span>
+										<span class="button-watch-photo__numb">10</span>
+									</button>
+
+									<img
+										src="./images/hot-bg-3.jpg"
+										alt="Image: photos of laughing people"
+										class="hot-item__image"
+									/>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="hot-item hot-item-huge">
+									<span class="popular hot-item__popular">Горячее</span>
+									<div class="hot-item__text">
+										<div class="hot-item__user">
+											<img
+												src="./images/hot-avatar-3.jfif"
+												alt="Images: user image"
+												class="hot-item__user-img"
+											/>
+											<div class="hot-item__name">Милана Волкова</div>
+											<span class="hot-item__specialty">Дизайнер</span>
+										</div>
+									</div>
+									<h2 class="hot-item__title">
+										Выбор читателей: лучшие дизайн макеты
+									</h2>
+									<button class="button-watch-photo hot__button-watch-photo">
+										<img
+											src="./images/Images.svg"
+											alt="Icon: images"
+											class="button-watch-photo__images"
+										/>
+										<span class="button-watch-photo__text">Смотреть фото</span>
+										<span class="button-watch-photo__numb">89</span>
+									</button>
+
+									<img
+										src="./images/hot-bg-4.jpg"
+										alt="Image: photos of laughing people"
+										class="hot-item__image"
+									/>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="hot-item hot-item-huge">
+									<span class="popular hot-item__popular">Горячее</span>
+									<div class="hot-item__text">
+										<div class="hot-item__user">
+											<img
+												src="./images/hot-avatar-4.jfif"
+												alt="Images: user image"
+												class="hot-item__user-img"
+											/>
+											<div class="hot-item__name">Крис Авелон</div>
+											<span class="hot-item__specialty">Фотограф</span>
+										</div>
+									</div>
+									<h2 class="hot-item__title">
+										Выбор читателей: заработок на фрилансе
+									</h2>
+									<button class="button-watch-photo hot__button-watch-photo">
+										<img
+											src="./images/Images.svg"
+											alt="Icon: images"
+											class="button-watch-photo__images"
+										/>
+										<span class="button-watch-photo__text">Смотреть фото</span>
+										<span class="button-watch-photo__numb">16</span>
+									</button>
+
+									<img
+										src="./images/hot-bg-5.jpg"
+										alt="Image: photos of laughing people"
+										class="hot-item__image"
+									/>
+								</div>
 							</div>
 						</div>
-						<h2 class="hot-item__title">
-							Выбор читателей: где удобнее работать фрилансеру
-						</h2>
-						<button class="button-watch-photo hot__button-watch-photo">
-							<img
-								src="./images/Images.svg"
-								alt="Icon: images"
-								class="button-watch-photo__images"
-							/>
-							<span class="button-watch-photo__text">Смотреть фото</span>
-							<span class="button-watch-photo__numb">26</span>
-						</button>
-
-						<img
-							src="./images/photos-of-laughing-people.jfif"
-							alt="Image: photos of laughing people"
-							class="hot-item__image"
-						/>
+						<!-- If we need pagination -->
+						<div class="swiper-pagination"></div>
 					</div>
 					<div class="hot-item hot-item-big">
 						<span class="hot-item-big__second-title second-title">Карьера</span>
@@ -1028,7 +1310,7 @@
 							их даже если...</span
 						>
 
-						<span class="small-card__date date date-altered">15 октября</span>
+						<span class="small-card__date date">15 октября</span>
 					</div>
 					<div class="small-card small-card-2">
 						<h6 class="small-card__title">Топ плагинов jQuery</h6>
@@ -1037,7 +1319,7 @@
 							или окна</span
 						>
 
-						<span class="small-card__date date date-altered">14 октября</span>
+						<span class="small-card__date date">14 октября</span>
 					</div>
 				</div>
 			</div>
@@ -1045,9 +1327,16 @@
 		<section class="mailing">
 			<div class="container">
 				<h2 class="mailing__title">Подпишитесь на нашу рассылку</h2>
-				<form action="#" class="mailing__form">
-					<input type="email" class="mailing__input" placeholder="Email" />
-					<button type="submit" class="mailing__submit">Подписаться</button>
+				<form action="send.php" class="mailing__form" method="POST">
+					<input
+						type="email"
+						name="email"
+						class="mailing__input"
+						placeholder="Email"
+					/>
+					<button type="submit" class="subscribe mailing__subs">
+						Подписаться
+					</button>
 				</form>
 			</div>
 		</section>
@@ -1174,6 +1463,7 @@
 			<div class="modal__dialog"></div>
 		</div>
 		<script src="./js/jquery-3.6.0.min.js"></script>
+		<script src="./js/swiper-bundle.min.js"></script>
 		<script src="./js/main.js"></script>
 	</body>
 </html>
