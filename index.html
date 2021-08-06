@@ -14,10 +14,10 @@
 		<title>Universal</title>
 	</head>
 	<body>
-		<header class="navbar">
+		<section class="navbar">
 			<div class="container">
 				<div class="navbar__items">
-					<a href="index.html" class="navbar__logo">
+					<a class="navbar__logo">
 						<img
 							class="navbar__image"
 							src="./images/UNV.svg"
@@ -33,31 +33,31 @@
 					</a>
 					<nav class="navbar-list">
 						<div class="navbar-list__item">
-							<a href="#articles" class="navbar-list__link">Статьи</a>
+							<a href="#" class="navbar-list__link">Статьи</a>
 						</div>
 						<div class="navbar-list__item">
-							<a href="#publications" class="navbar-list__link">Новости</a>
+							<a href="#" class="navbar-list__link">Новости</a>
 						</div>
 						<div class="navbar-list__item">
-							<a href="#hot" class="navbar-list__link">Горячее</a>
+							<a href="#" class="navbar-list__link">Горячее</a>
 						</div>
 						<div class="navbar-list__item">
-							<a href="#footer" class="navbar-list__link">HTML</a>
+							<a href="#" class="navbar-list__link">HTML</a>
 						</div>
 						<div class="navbar-list__item">
-							<a href="#footer" class="navbar-list__link">CSS</a>
+							<a href="#" class="navbar-list__link">CSS</a>
 						</div>
 						<div class="navbar-list__item">
-							<a href="#footer" class="navbar-list__link">JavaScript</a>
+							<a href="#" class="navbar-list__link">JavaScript</a>
 						</div>
 						<div class="navbar-list__item">
-							<a href="#footer" class="navbar-list__link">Web Design</a>
+							<a href="#" class="navbar-list__link">Web Design</a>
 						</div>
 					</nav>
 					<button class="button navbar__button">Оставить Заявку</button>
 				</div>
 			</div>
-		</header>
+		</section>
 		<section class="main">
 			<div class="container">
 				<div class="main-block">
@@ -96,18 +96,13 @@
 					<div class="main-right">
 						<span class="title-recommended">Рекомендуем</span>
 						<ul class="recommendation-list">
-							<li
-								class="
-									recommendation-list__item recommendation-list__item-active
-								"
-								data-target="first"
-							>
+							<li class="recommendation-list__item">
 								<span class="recommendation-list__title first-title">css</span>
 								<p class="recommendation-list__description">
 									Как использовать CSS float после&nbsp;того, как вышел Flexbox
 								</p>
 							</li>
-							<li class="recommendation-list__item" data-target="second">
+							<li class="recommendation-list__item">
 								<span class="recommendation-list__title second-title"
 									>javascript</span
 								>
@@ -115,13 +110,13 @@
 									На каком стандарте писать скрипты,&nbsp;если я фрилансер
 								</p>
 							</li>
-							<li class="recommendation-list__item" data-target="third">
+							<li class="recommendation-list__item">
 								<span class="recommendation-list__title third-title">html</span>
 								<p class="recommendation-list__description">
 									Правильно вставляем картинку на&nbsp;сайт для Retina дисплея
 								</p>
 							</li>
-							<li class="recommendation-list__item" data-target="fourth">
+							<li class="recommendation-list__item">
 								<span class="recommendation-list__title fourth-title"
 									>Web design</span
 								>
@@ -129,7 +124,7 @@
 									ТОП-10 плагинов для Figma
 								</p>
 							</li>
-							<li class="recommendation-list__item" data-target="fifth">
+							<li class="recommendation-list__item">
 								<span class="recommendation-list__title fifth-title">CSS</span>
 								<p class="recommendation-list__description">
 									Возможности CSS Grid Layout , которые уже можно применять
@@ -174,7 +169,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="articles" id="articles">
+		<section class="articles">
 			<div class="container">
 				<div class="articles-grid">
 					<div class="articles-grid__item articles-grid__item_big">
@@ -414,7 +409,7 @@
 								class="articles-grid__content-small-social__link"
 								target="_blank"
 								rel="nofollow noindex noopener"
-								href="https://www.facebook.com/public/Main-Page"
+								href="https://www.facebook.com/help/753701661398957"
 								><img src="./images/fb.svg" alt="Icon: facebook"
 							/></a>
 							<a
@@ -451,7 +446,7 @@
 				/></a>
 			</div>
 		</section>
-		<section class="publications" id="#publications">
+		<section class="publications">
 			<div class="container publications-container">
 				<div class="publications-main">
 					<div class="publications-main__item">
@@ -963,7 +958,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="hot" id="hot">
+		<section class="hot">
 			<div class="container">
 				<div class="hot-grid">
 					<div class="hot-item hot-item-huge">
@@ -1051,128 +1046,7 @@
 				</form>
 			</div>
 		</section>
-		<footer class="footer" id="footer">
-			<div class="container">
-				<div class="footer-top">
-					<div class="footer-top__item">
-						<h5 class="footer-top__title">Новости</h5>
-						<div class="footer-top__links">
-							<a href="#" class="footer-top__link">Обновления</a>
-							<a href="#" class="footer-top__link">Экспресс</a>
-							<a href="#" class="footer-top__link">Politics</a>
-							<a href="#" class="footer-top__link">Solar Eclipse</a>
-						</div>
-					</div>
-					<div class="footer-top__item">
-						<h5 class="footer-top__title">Статьи</h5>
-						<div class="footer-top__links">
-							<a href="#" class="footer-top__link">HTML</a>
-							<a href="#" class="footer-top__link">CSS</a>
-							<a href="#" class="footer-top__link">JavaScript</a>
-							<a href="#" class="footer-top__link">Web Design </a>
-						</div>
-					</div>
-					<div class="footer-top__item">
-						<h5 class="footer-top__title">Видеоуроки</h5>
-						<div class="footer-top__links">
-							<a href="#" class="footer-top__link">Скринкасты</a>
-							<a href="#" class="footer-top__link">Уроки</a>
-							<a href="#" class="footer-top__link">Вебинары</a>
-						</div>
-					</div>
-					<div class="footer-top__item">
-						<h5 class="footer-top__title">Курсы</h5>
-						<div class="footer-top__links">
-							<a href="#" class="footer-top__link">Платные интенсивы</a>
-							<a href="#" class="footer-top__link">Бесплатные стримы</a>
-							<a href="#" class="footer-top__link">Мастер-классы</a>
-							<a href="#" class="footer-top__link">Менторство </a>
-							<a href="#" class="footer-top__link">Буткемпы </a>
-						</div>
-					</div>
-					<div class="footer-top__item">
-						<h5 class="footer-top__title">Информация</h5>
-						<div class="footer-top__links">
-							<a href="#" class="footer-top__link">Политика данных</a>
-							<a href="#" class="footer-top__link">Оферта сайта</a>
-							<a href="#" class="footer-top__link">Реквизиты</a>
-							<a href="#" class="footer-top__link">Контакты </a>
-						</div>
-					</div>
-					<div class="footer-top__item">
-						<h5 class="footer-top__title">Категории</h5>
-						<div class="footer-top__links">
-							<a href="#" class="footer-top__link">Популярное</a>
-							<a href="#" class="footer-top__link">Горячее</a>
-							<a href="#" class="footer-top__link">Подборки</a>
-							<a href="#" class="footer-top__link">Мнения </a>
-							<a href="#" class="footer-top__link">Карьера </a>
-						</div>
-					</div>
-				</div>
-				<div class="footer-middle">
-					<div class="footer-middle-left">
-						<a href="index.html" class="footer-middle-left__image-link"
-							><img
-								class="footer-middle-left__image"
-								src="./images/UNV-white.svg"
-								alt="Logo: Universal"
-						/></a>
-
-						<a href="#" class="footer-middle-left__link">Контакты</a>
-						<a href="#" class="footer-middle-left__link">Работа у нас</a>
-						<a href="#" class="footer-middle-left__link">Реклама</a>
-						<a href="#" class="footer-middle-left__link">Обратная связь</a>
-					</div>
-					<div class="footer-middle-right">
-						<a
-							class="footer-middle-right__social"
-							target="_blank"
-							rel="nofollow noindex noopener"
-							href="https://www.facebook.com/public/Main-Page"
-							><img src="./images/fb.svg" alt="Icon: facebook"
-						/></a>
-
-						<a
-							class="footer-middle-right__social"
-							target="_blank"
-							rel="nofollow noindex noopener"
-							href="https://twitter.com/?lang=ru"
-							><img src="./images/twitter.svg" alt="Icon: twitter"
-						/></a>
-						<a
-							class="footer-middle-right__social"
-							target="_blank"
-							rel="nofollow noindex noopener"
-							href="https://www.youtube.com/"
-							><img src="./images/ut.svg" alt="Icon: youtube"
-						/></a>
-						<a
-							class="footer-middle-right__social"
-							target="_blank"
-							rel="nofollow noindex noopener"
-							href="https://www.instagram.com/"
-							><img src="./images/inst.svg" alt="Icon: instagram"
-						/></a>
-					</div>
-				</div>
-				<div class="footer-bottom">
-					<p class="footer-bottom__text">
-						Universal — это онлайн издание, в котором мы публикуем полезные
-						материалы о веб разработке: статьи, новости, видеоуроки, подборки,
-						ссылки и курсы. Материалы на сайте бесплатны, но при копировании,
-						указывайте ссылку.
-					</p>
-					<span class="footer-bottom__copyright"
-						>&copy; 2020 Universal Magazine</span
-					>
-				</div>
-			</div>
-		</footer>
-		<div class="modal">
-			<div class="modal__background"></div>
-			<div class="modal__dialog"></div>
-		</div>
+		<footer class="footer"></footer>
 		<script src="./js/jquery-3.6.0.min.js"></script>
 		<script src="./js/main.js"></script>
 	</body>
