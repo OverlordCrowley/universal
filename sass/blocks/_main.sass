@@ -3,6 +3,7 @@
   background-color: $background-color-grey
   padding: 30px 0 30px 0
   overflow: visible
+  margin-top: -1px
   &-block
     display: flex
     justify-content: space-between
@@ -18,6 +19,7 @@
     flex-direction: column
     justify-content: space-between
     padding: 55px 0 100px 55px
+    display: none
     &::after
       content: ''
       width: 100%
@@ -30,6 +32,8 @@
       border-radius: 0 0 0 10px
       background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
       z-index: -2
+    &-active
+      display: flex
     &__background
       &-img
         position: absolute
@@ -42,7 +46,6 @@
         width: 100%
         height: 100%
         border-radius: 10px 0 0 10px
-
   &-right
     background-color: #fff
     border-radius: 0 10px 10px 0
@@ -53,14 +56,13 @@
 .left
   &-info
     display: flex
-    justify-content: space-between
     align-items: center
-    max-width: 136px
     &__avatar
       width: 45px
       height: 45px
       border-radius: 50%
     &-text
+      margin-left: 10px
       &__title
         font-style: normal
         font-weight: 400
@@ -104,16 +106,25 @@
   padding-left: 25px
   padding-bottom: 19px
   display: block
+  word-wrap: break-word
   border-bottom: 1px solid $border-color
 .recommendation-list
+  max-height: 510px
   padding: 0
+  height: 510px
   &__item
-    padding: 17px 25px 18px 25px
+    padding: 15px 25px 18px 25px
     border-bottom: 1px solid $border-color
+    min-height: 100px
+    cursor: pointer
+
     &:nth-child(4)
-      padding-bottom: 39px
+      padding-bottom: 20px
     &:last-child
       border: none
+      height: 110px
+      & > .recommendation-list__description
+        margin-top: 9px
 
   &__title
     font-style: normal
@@ -135,6 +146,9 @@
     font-weight: normal
     font-size: 14px
     line-height: 20px
+    max-height: 40px
+    height: 40px
+    overflow: auto
     color: $standart-text-color
 .first-title
   color: #3BBDC4
@@ -146,3 +160,8 @@
   color: #FFA34D
 .fifth-title
   color: #3DC47E
+
+.recommendation-list
+  &__item
+    &-active
+      background-color: #F5F5F5

@@ -5,7 +5,7 @@
   &__like
     display: flex
     align-items: center
-    margin-left: 10px
+    margin-left: 8px
     & > .like__numb-opacity
       margin-left: 5px
   &-grid
@@ -14,6 +14,9 @@
     grid-template-rows: repeat(4, 170px)
     grid-column-gap: 29px
     grid-row-gap: 30px
+    &__info
+      flex-wrap: wrap
+      justify-content: start
     &__item
       overflow: hidden
       &_big
@@ -24,7 +27,9 @@
         border-radius: 10px
         position: relative
         overflow: hidden
+        cursor: pointer
       &-medium
+        cursor: pointer
         position: relative
         border-radius: 10px
         padding: 21px 26px 25px 25px
@@ -49,6 +54,11 @@
           padding: 0
           background-color: #FFFFFF
           border-radius: 10px
+          cursor: pointer
+          position: relative
+          border-radius: 10px
+          padding: 0 0 15px 0
+          z-index: 2
           &::after
             background-color: transparent
             background: transparent
@@ -62,6 +72,7 @@
           border-radius: 10px
           grid-column: 2
           grid-row: 3
+          cursor: pointer
 
       &-tags
         grid-column: 4 / 5
@@ -69,6 +80,7 @@
         background: #FFFFFF
         border-radius: 10px
         padding: 0
+        cursor: auto
         &::after
           background: transparent
     &__content
@@ -77,16 +89,19 @@
       &-tags
         padding: 0 19px 30px 17px
         height: 100%
-        word-wrap: nowrap
         overflow: auto
         max-width: 100%
+        margin-top: 25px
       &-small
         &-social
           display: flex
           justify-content: space-between
           margin: auto
           max-width: 190px
+
           &__link
+            &:hover
+              border-bottom: 2px solid #000
 
     &__main-title
       font-style: normal
@@ -115,10 +130,14 @@
       font-size: 25px
       line-height: 30px
       color: $title-color
-      max-width: 238px
+      max-width: 246px
       margin-bottom: 25px
       margin-left: 35px
       z-index: 2
+      height: 91px
+      max-height: 91px
+      word-wrap: break-word
+      overflow: auto
       &-tags
         color: $title-color
         font-style: normal
@@ -126,13 +145,16 @@
         font-weight: 900
         font-size: 14px
         line-height: 20px
-        margin-left: 0
         padding-left: 25px
-        padding-top: 20px
+        margin-left: 0
+        padding-bottom: 39px
+        margin-bottom: 0
+        margin-top: 19px
+        height: 20px
+        max-height: 20px
+        overflow: hidden
         letter-spacing: 0.5px
         text-transform: uppercase
-        padding-bottom: 19px
-        margin-bottom: 25px
         border-bottom: 1px solid $border-color
       &-redact
         font-size: 16px
@@ -173,7 +195,7 @@
         &-altered
           color: $title-color
           max-height: 25px
-          max-width: 81%
+          max-width: 83%
           overflow: auto
           word-wrap: break-word
     &__subtitle
@@ -191,13 +213,13 @@
         overflow: auto
         max-width: 78%
         &-altered
-          margin-top: 6px
+          margin-top: 5px
           color: $standart-text-color
           max-width: 213px
           max-height: 60px
           height: 60px
           overflow: auto
-          margin-bottom: 7px
+          margin-bottom: 5px
     &__desctiption
       font-style: normal
       font-weight: normal
@@ -205,10 +227,12 @@
       line-height: 20px
       color: $standart-text-color
       max-width: 228px
+      width: 228px
       word-wrap: break-word
-      margin-bottom: 49px
+      margin-bottom: 48px
       margin-left: 35px
       max-height: 80px
+      height: 80px
       overflow: auto
     &__link
       padding-top: 13px
@@ -253,13 +277,13 @@
     &__comment
       display: flex
       align-items: center
-      justify-content: space-between
+      word-wrap: break-word
       width: 100%
       border-top: 1px solid $border-color
       padding-top: 12px
       z-index: 2
       &-right
-        margin-top: 5px
+        margin-top: 4px
         margin-left: 9px
       &-medium
         display: flex
@@ -283,8 +307,10 @@
       color: $title-color
       margin-left: 10px
       overflow: auto
-      max-width: 100px
-
+      max-width: 103px
+      width: 103px
+      word-wrap: break-word
+      white-space: normal
       max-height: 20px
       &-medium
         font-weight: normal
@@ -304,9 +330,10 @@
       color: $standart-text-color
       max-height: 20px
       width: 305px
+      margin-left: 3px
       overflow: auto
-      margin-right: -8px
       &-tags
+        cursor: pointer
         display: inline-block
         margin-left: 10px
         font-style: normal
@@ -317,7 +344,8 @@
         padding: 5px 16px 5px 13px
         border: 1px solid $border-color
         border-radius: 5px
-        margin-top: 15px
+        margin-top: 14px
+
         &:nth-child(1), &:nth-child(2)
           margin-top: 0
         &:nth-child(3), &:nth-child(4)
@@ -336,8 +364,7 @@
       fill: #fff
   &-medium
     margin-right: 0
-    max-width: 34px
-    margin-left: 7px
+    margin-left: 8px
   &__numb
     font-style: normal
     font-weight: normal
@@ -345,7 +372,8 @@
     line-height: 15px
     color: $navbar-link-color
     margin-left: 6px
-    white-space: word-wrap
+    max-height: 15px
+    word-wrap: break-word
     &-opacity
       color: #fff
 .popular
@@ -359,7 +387,6 @@
   border-radius: 3px
   padding: 6px 12px 7px 12px
 .date
-  white-space: nowrap
   &-altered
     font-style: normal
     font-weight: normal
@@ -372,7 +399,6 @@
 .like
   display: flex
   align-items: center
-  margin-left: 10px
   & > .like__numb-opacity
     margin-left: 5px
 .altered
