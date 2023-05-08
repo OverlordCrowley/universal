@@ -38,15 +38,15 @@ try {
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'alex5533553@gmail.com'; // Логин на почте
-    $mail->Password   = 'fj348ghfsdignGISGNu'; // Пароль на почте
+    $mail->Username   = ''; // Логин на почте
+    $mail->Password   = ''; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('alex5533553@gmail.com', 'Representative of BEST TOUR PLAN'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('', 'Representative of BEST TOUR PLAN'); // Адрес самой почты и имя отправителя
 
     if (!empty($email)) {
         if (!empty($name) || !empty($phone)) {
-            $mail->addAddress("kramzos.yt@gmail.com");
+            $mail->addAddress("");
             $mail->isHTML(true);
             $mail->Subject = $modalTitle;
             $mail->Body = $modalMes; 
@@ -61,7 +61,7 @@ try {
             header("Location: newsletter-thank.html"); 
             $mail->send();
             $mail->ClearAllRecipients();
-            $mail->addAddress("kramzos.yt@gmail.com");
+            $mail->addAddress("");
             $mail->Subject = $newnewsletterTtitle;
             $mail->Body = $newnewsletterMe; 
             $mail->isHTML(true);
@@ -69,7 +69,7 @@ try {
         }
     }
     else {
-        $mail->addAddress("kramzos.yt@gmail.com");
+        $mail->addAddress("");
         $mail->isHTML(true);
         $mail->Subject = $title;
         $mail->Body = $body; 
